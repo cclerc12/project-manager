@@ -1,38 +1,13 @@
-# Welcome to Remix!
+## Get Started
 
-- [Remix Docs](https://remix.run/docs)
+npm i
 
-## Development
+prisma generate
 
-From your terminal:
+## Add postgres db connector
 
-```sh
-npm run dev
-```
+Do this in .env
 
-This starts your app in development mode, rebuilding assets on file changes.
+## Seed database
 
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+npx prisma db seed
