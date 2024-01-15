@@ -8,7 +8,7 @@ run prisma generate
 ## Create a Database
 
 Prisma defaults to Postgres.
-I suggest going to [Railway.app](https://railway.app/) and spinning up an instance.
+I suggest going to [Railway.app](https://railway.app/) and spinning one up if you don't have a local instance.
 
 ## Add postgres db URL in .env
 
