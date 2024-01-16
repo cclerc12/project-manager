@@ -6,19 +6,19 @@ async function seed() {
   const project = await prisma.project.createMany({
     data: [
       {
-        title: "Project 1",
+        title: "PO Consolidation",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquet ultricies, nunc nunc ultricies nunc, sed aliquet nisl massa in tellus. Nam auctor, nisl nec ultricies ultricies, nisl nisl aliquet nisl, nec aliquet nisl nisl nec nisl. ",
         status: "In Progress",
       },
       {
-        title: "Project 2",
+        title: "AQ Integration / Duplicate Customers",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquet ultricies, nunc nunc ultricies nunc, sed aliquet nisl massa in tellus. Nam auctor, nisl nec ultricies ultricies, nisl nisl aliquet nisl, nec aliquet nisl nisl nec nisl. ",
         status: "In Progress",
       },
       {
-        title: "Project 3",
+        title: "Customer Refunds",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquet ultricies, nunc nunc ultricies nunc, sed aliquet nisl massa in tellus. Nam auctor, nisl nec ultricies ultricies, nisl nisl aliquet nisl, nec aliquet nisl nisl nec nisl. ",
         status: "In Progress",

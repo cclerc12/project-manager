@@ -23,11 +23,8 @@ export default function Project() {
   const { project } = useLoaderData<typeof loader>();
 
   return (
-    <div className="flex flex-col content-center w-10/12 h-5/6">
-      <div className="button_div flex flex-row items-center justify-between w-full h-16">
-        <div className="flex flex-row">
-          <Link to={"../"}>⬅️ Back</Link>
-        </div>
+    <div className="flex flex-col content-center w-10/12 h-5/6 p-10">
+      <div className="button_div flex flex-row items-center justify-end w-full h-16">
         <div className="flex items-center justify-center w-32 h-12 bg-theme-blue-400 hover:bg-theme-blue-600 rounded-lg">
           <p className="text-white">Submit</p>
         </div>
