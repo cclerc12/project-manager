@@ -50,3 +50,5 @@ instead of:
 ```sh
 npx prisma db seed
 ```
+
+although, this doesn't work for me and I haven't spent the time to figure out why.
