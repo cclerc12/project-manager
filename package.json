@@ -2,6 +2,7 @@
   "name": "herdum-erp",
   "private": true,
   "sideEffects": false,
+  "type": "module",
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
   },
