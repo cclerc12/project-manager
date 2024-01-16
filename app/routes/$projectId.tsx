@@ -2,12 +2,17 @@ import type { LoaderFunctionArgs } from "@remix-run/node";
 import { Form, useLoaderData, Link } from "@remix-run/react";
 import { json } from "@remix-run/node";
 
-import { getProject } from "../data";
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
 import invariant from "tiny-invariant";
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
   invariant(params.projectId, "No project ID provided");
-  const project = await getProject(params.projectId);
+  const project = await prisma.project.findUnique({
+    where: {
+      id: params.projectId,
+    },
+  });
   if (!project) {
     throw new Response("Not found", { status: 404 });
   }
