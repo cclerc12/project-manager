@@ -2,7 +2,8 @@
 
 ```sh
 npm i
-run prisma generate
+npm install @prisma/client
+npx prisma generate
 ```
 
 ## Create a Database
