@@ -31,9 +31,7 @@ If you get this error:
 TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts"
 ```
 
-[https://github.com/prisma/prisma/issues/7053](https://github.com/prisma/prisma/issues/7053)
-
-The solution that worked for me was to remove this:
+The [solution](https://github.com/prisma/prisma/issues/7053) that worked for me was to remove this:
 
 ```sh
 "type": "module"
