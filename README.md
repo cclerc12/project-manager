@@ -31,8 +31,23 @@ If you get this error:
 TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts"
 ```
 
-The solution that worked for me was to remove this from the package.json file.
+[https://github.com/prisma/prisma/issues/7053](https://github.com/prisma/prisma/issues/7053)
+The solution that worked for me was to remove this:
 
 ```sh
 "type": "module"
+```
+
+from the package.json file when seeding, but add it back once you are done.
+
+You could also try:
+
+```sh
+node --loader ts-node/esm "prisma/seed.ts"
+```
+
+instead of:
+
+```sh
+npx prisma db seed
 ```
