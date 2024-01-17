@@ -1,8 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData, Link, Outlet } from "@remix-run/react";
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import prisma from "../lib/db_connect";
 
 export const loader = async () => {
   const projects = await prisma.project.findMany();
