@@ -18,15 +18,19 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   const { projects } = useLoaderData<typeof loader>();
   return (
-    <div className="flex flex-row w-screen h-screen">
-      <div className="sidebar flex flex-col w-1/4 h-screen bg-white border-r-2 border-slate-100 border-solid">
-        {projects.map((project) => (
-          <div className="flex flex-row justify-center content-center w-full h-8">
-            <Link to={project.id}>{project.title}</Link>
-          </div>
-        ))}
+    <div className="dashboard-container flex flex-row w-screen h-screen">
+      <div className="sidebar-container flex flex-row justify-center w-1/4 h-screen border-r-2 border-slate-100 border-solid">
+        <div className="sidebar w-10/12 h-full pt-5 pb-5">
+          {projects.map((project) => (
+            <div className="flex flex-col justify-center w-full h-20 border-b-2 border-slate-100 border-solid hover:bg-theme-blue-600">
+              <Link className="text-center" to={project.id}>
+                {project.title}
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="detail w-3/4 h-screen bg-white">
+      <div className="description-container flex flex-row justify-center w-3/4 h-screen bg-white">
         <Outlet />
       </div>
     </div>
