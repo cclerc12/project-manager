@@ -16,7 +16,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
   return redirect("/projects/");
 };
 
-export default function editProject() {
+export default function newProject() {
   return (
     <div className="edit_container flex flex-col w-10/12 h-full pt-5 pb-5">
       <Form className="flex flex-col w-full h-full" method="post">
