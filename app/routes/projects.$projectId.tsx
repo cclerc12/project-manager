@@ -40,6 +40,15 @@ export default function Project() {
       <div className="flex flex-row w-full h-full border-none cursor-text bg-white">
         <p className="w-full h-full whitespace-pre">{project.description}</p>
       </div>
+      <div className="flex flex-row items-center justify-end w-full h-16">
+        <div className="flex items-center justify-center w-14 h-10 bg-rose-400 hover:bg-rose-600 rounded-lg">
+          <Form action="delete" method="post">
+            <button className="text-white" type="submit">
+              Delete
+            </button>
+          </Form>
+        </div>
+      </div>
     </div>
   );
 }
