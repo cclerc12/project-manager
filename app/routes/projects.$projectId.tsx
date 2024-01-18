@@ -38,7 +38,7 @@ export default function Project() {
       </div>
 
       <div className="flex flex-row w-full h-full border-none cursor-text bg-white">
-        <p className="w-full h-full">{project.description}</p>
+        <p className="w-full h-full whitespace-pre">{project.description}</p>
       </div>
     </div>
   );

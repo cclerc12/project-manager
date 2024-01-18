@@ -4,7 +4,11 @@ import { useLoaderData, Link, Outlet } from "@remix-run/react";
 import prisma from "../lib/db_connect";
 
 export const loader = async () => {
-  const projects = await prisma.project.findMany();
+  const projects = await prisma.project.findMany({
+    orderBy: {
+      title: "asc",
+    },
+  });
   return json({ projects });
 };
 
