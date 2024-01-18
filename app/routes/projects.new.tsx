@@ -41,7 +41,7 @@ export default function newProject() {
             placeholder="Status"
           />
         </div>
-        <div className="flex flex-row w-full h-full cursor-text bg-white">
+        <div className="flex flex-row w-full h-full cursor-text bg-white dark:bg-[#121212]">
           <textarea
             className="w-full h-full focus:outline-none"
             name="description"
