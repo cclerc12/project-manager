@@ -1,3 +1,19 @@
 @tailwind base;
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f1f4f5;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f1f4f5;
+}
+
 @tailwind components;
 @tailwind utilities;

@@ -37,7 +37,7 @@ export default function Project() {
         <p>{project.status}</p>
       </div>
 
-      <div className="flex flex-row w-full h-full border-none cursor-text bg-white">
+      <div className="flex flex-row w-full h-full border-none cursor-text bg-white overflow-auto">
         <p className="w-full h-full whitespace-pre">{project.description}</p>
       </div>
       <div className="flex flex-row items-center justify-end w-full h-16">

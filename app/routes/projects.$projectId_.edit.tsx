@@ -57,7 +57,7 @@ export default function editProject() {
         </div>
         <div className="flex flex-row w-full h-full cursor-text bg-white">
           <textarea
-            className="w-full h-full focus:outline-none"
+            className="w-full h-full focus:outline-none resize-none"
             name="description"
             defaultValue={project.description || ""}
           />
