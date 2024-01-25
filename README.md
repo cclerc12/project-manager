@@ -4,6 +4,7 @@
 npm i
 npm install @prisma/client
 npx prisma generate
+npx prisma migrate/dev
 ```
 
 ## Create a Database
