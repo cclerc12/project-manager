@@ -14,7 +14,7 @@ export const loader = async () => {
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Projects" },
+    { title: "notebook" },
     { name: "description", content: "Handling Projects" },
   ];
 };
@@ -24,7 +24,7 @@ export default function Index() {
   return (
     <div className="dashboard-container flex flex-row w-screen h-screen">
       <div className="sidebar-container flex flex-col w-1/4 h-screen border-r-2 bg-white dark:bg-[#121212] border-slate-100 border-solid">
-        <div className="sidebar flex flex-col self-center w-10/12 h-5/6 pt-5 pb-5">
+        <div className="sidebar flex flex-col self-center w-10/12 h-5/6 pt-5 pb-5  overflow-auto">
           {projects.map((project) => (
             <Link className="text-center" to={project.id}>
               <div className="flex flex-col justify-center w-full h-20 border-b-2 border-slate-100 border-solid hover:bg-theme-blue-400 dark:hover:bg-inherit hover:text-white hover:rounded-lg dark:hover:rounded dark:text-[#6C6C6C]">
